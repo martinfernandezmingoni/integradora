@@ -1,16 +1,16 @@
 const fs = require('fs')
 
-class FileManager {
+class ProductManager {
   constructor(){}
 
   async loadItems(){
-    if(fs.existsSync(process.cwd() + '/src/files/Books.json')){
+    if(fs.existsSync(process.cwd() + '/src/files/Products.json')){
       const data = await fs.promises.readFile(
-        process.cwd() + '/src/files/Books.json'
+        process.cwd() + '/src/files/Products.json'
         )
-        const newBooks = JSON.parse(data)
+        const newProducts = JSON.parse(data)
         console.log('desde la clase')
-        return newBooks
+        return newProducts
     }
     return 'El archivo no existe'
   }
@@ -20,4 +20,4 @@ class FileManager {
   }
 }
 
-module.exports = FileManager
+module.exports = ProductManager

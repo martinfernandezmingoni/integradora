@@ -1,9 +1,9 @@
-const usersController = require('../users/controller.users')
-const booksController = require('../books/controller.books.js')
+const cartsController = require('../carts/controller.carts')
+const productsController = require('../products/controller.products.js')
 
 const router = app => {
-  app.use('/books', booksController)
-  app.use('/users', usersController)
+  app.use('/products', productsController)
+  app.use('/carts', cartsController)
 }
 
 module.exports = router
