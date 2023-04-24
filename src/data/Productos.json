@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Catan",
+    "description": "A classic board game of strategy and negotiation",
+    "price": 49.99,
+    "thumbnail": "https://example.com/images/catan.jpg",
+    "code": "CTN001",
+    "stock": 10
+  },
+  {
+    "name": "Ticket to Ride",
+    "description": "A cross-country train adventure",
+    "price": 39.99,
+    "thumbnail": "https://example.com/images/ttr.jpg",
+    "code": "TTR001",
+    "stock": 15
+  },
+  {
+    "name": "Pandemic",
+    "description": "A cooperative game of global strategy",
+    "price": 44.99,
+    "thumbnail": "https://example.com/images/pandemic.jpg",
+    "code": "PND001",
+    "stock": 5
+  },
+  {
+    "name": "Codenames",
+    "description": "A word game of spies and agents",
+    "price": 19.99,
+    "thumbnail": "https://example.com/images/codenames.jpg",
+    "code": "CDN001",
+    "stock": 20
+  },
+  {
+    "name": "Azul",
+    "description": "A tile drafting game of colorful patterns",
+    "price": 39.99,
+    "thumbnail": "https://example.com/images/azul.jpg",
+    "code": "AZL001",
+    "stock": 12
+  },
+  {
+    "name": "Scythe",
+    "description": "An engine-building game of farming and conquest",
+    "price": 69.99,
+    "thumbnail": "https://example.com/images/scythe.jpg",
+    "code": "SCY001",
+    "stock": 8
+  },
+  {
+    "name": "Wingspan",
+    "description": "A birdwatching game of strategy and ecology",
+    "price": 59.99,
+    "thumbnail": "https://example.com/images/wingspan.jpg",
+    "code": "WSP001",
+    "stock": 18
+  },
+  {
+    "name": "Gloomhaven",
+    "description": "A tactical combat game of adventure and exploration",
+    "price": 99.99,
+    "thumbnail": "https://example.com/images/gloomhaven.jpg",
+    "code": "GLH001",
+    "stock": 2
+  },
+  {
+    "name": "Kingdomino",
+    "description": "A tile-laying game of kingdom building",
+    "price": 24.99,
+    "thumbnail": "https://example.com/images/kingdomino.jpg",
+    "code": "KDM001",
+    "stock": 25
+  },
+  {
+    "name": "Twilight Struggle",
+    "description": "A two-player game of Cold War politics",
+    "price": 59.99,
+    "thumbnail": "https://example.com/images/twilightstruggle.jpg",
+    "code": "TWS001",
+    "stock": 6
+  },
+  {
+    "name": "Dominion",
+    "description": "A deck-building game of medieval conquest",
+    "price": 34.99,
+    "thumbnail": "https://example.com/images/dominion.jpg",
+    "code": "DMN001",
+    "stock": 14
+  },
+  {
+    "name": "King of Tokyo",
+    "description": "Un juego de lucha de monstruos gigantes en la ciudad de Tokio",
+    "price": 24.99,
+    "thumbnail": "https://ejemplo.com/imagenes/kingoftokyo.jpg",
+    "code": "KOT001",
+    "stock": 14
+  },
+  {
+    "name": "Carcassonne",
+    "description": "Un juego de mesa de construcción de ciudades medievales",
+    "price": 29.99,
+    "thumbnail": "https://ejemplo.com/imagenes/carcassonne.jpg",
+    "code": "CSC001",
+    "stock": 18
+  },
+  {
+    "name": "Dixit",
+    "description": "Un juego de mesa de comunicación no verbal",
+    "price": 34.99,
+    "thumbnail": "https://ejemplo.com/imagenes/dixit.jpg",
+    "code": "DXT001",
+    "stock": 12
+  },
+  {
+    "name": "Coup",
+    "description": "Un juego de mesa de roles y engaño",
+    "price": 14.99,
+    "thumbnail": "https://ejemplo.com/imagenes/coup.jpg",
+    "code": "CP001",
+    "stock": 12
+  },
+  {
+    "name": "Agricola",
+    "description": "Un juego de mesa de agricultura y gestión de recursos",
+    "price": 59.99,
+    "thumbnail": "https://ejemplo.com/imagenes/agricola.jpg",
+    "code": "AG001",
+    "stock": 6
+  }
+]

@@ -1,38 +1,35 @@
 const express = require('express')
-const handlebars = require('express-handlebars')
-const mongoConnect = require('../db')
-const router = require('./router')
-const httpServer = require('./index')
-const {Server} = require('socket.io')
-
+const cookieParser = require('cookie-parser')
 const app = express()
 
-app.use(express.json())
-app.use(express.urlencoded({extended: true}))
-app.use(express.static(__dirname + '/public'))
 
-app.engine('handlebars', handlebars.engine())
-app.set('views', __dirname + '/views')
+//handlebars
+const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
+const handlebars = require('express-handlebars');
+const hbs = handlebars.create({
+  handlebars: allowInsecurePrototypeAccess(require('handlebars')),
+  defaultLayout: 'main'
+});
+//dataBase
+const mongoConnect = require('../db')
+//Router
+const router = require('./routers')
+//middleware para cookies
+app.use(cookieParser());
+// middleware para leer datos de formularios
+app.use(express.urlencoded({ extended: true }));
+// Servir archivos estáticos desde la carpeta "public"
+app.use(express.static(__dirname + '/public'));
+//middleware para leer datos de archivos json
+app.use(express.json())
+app.engine('handlebars', hbs.engine);
+app.set('views',__dirname + '/views')
+
 
 mongoConnect()
 router(app)
 
 
 
-const io = new Server(httpServer)
-
-io.on('connection', socket => {
-  console.log(`Cliente conectado con id: ${socket.id}`)
-
-  socket.on('newUser', user => {
-    socket.broadcast.emit('userConnected', user)
-    socket.emit('messageLogs', messages)
-  })
-
-  socket.on('message', data => {
-    messages.push(data)
-    io.emit('messageLogs', messages)
-  })
-})
 
 module.exports = app
